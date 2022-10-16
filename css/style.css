@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans";
+    background-image: url(../img/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%); 
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+header .logo {
+    margin: 30px 0;
+}
+section .container {
+    display: flex;
+    align-items: flex-start;
+}
+section .container .illustration {
+    width: 100%;
+    height: 450px;
+}
+section .container .illustration img {
+    height: 100%;
+}
+section .container .offre {
+    margin: 50px;
+    color: hsl(0, 0%, 100%);
+}
+section .container .offre h1 {
+    font-family: Poppins;
+    font-size: 2.5em;
+}
+section .container .offre p:first-of-type {
+    font-size: 1.03em;
+}
+section .container .offre p:last-of-type {
+    padding: 10px 50px;
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(257, 40%, 49%);
+    border-radius: 32px;
+    width: fit-content;
+    box-shadow: 0 5px 20px 0 hsl(0deg 0% 20%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+section .container .offre p:last-of-type:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 0%, 100%);
+}
+footer .container {
+    display: flex;
+    justify-content: flex-end;
+}
+footer .container .icons i {
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer .container .icons i:first-child {
+    width: 38px;
+    text-align: center;
+}
+footer .container .icons i:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+@media (max-width: 766px) {
+    body {
+        background-image: url(../img/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .container {
+        width: 300px;
+    }
+    header .logo {
+        height: 50px;
+        margin: 20px 0;
+    }
+    header .logo img {
+        height: 100%;
+    }
+    section .container {
+        flex-wrap: wrap;
+    }
+    section .container .illustration {
+        width: 300px;
+        height: unset;
+    }
+    section .container .illustration img {
+        width: 100%;
+        height: unset;
+    }
+    section .container .offre {
+        margin: 25px 0;
+        text-align: center;
+    }
+    section .container .offre h1 {
+        font-size: 1.5em
+    }
+    section .container .offre p:first-of-type {
+        font-size: 1em;
+    }
+    section .container .offre p:last-of-type {
+        margin: auto;
+    }
+}
